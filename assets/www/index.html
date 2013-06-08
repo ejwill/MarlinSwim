@@ -8,6 +8,12 @@
 	<script type="text/javascript" src="cordova-2.7.0.js"></script>
 	<script type="text/javascript" src="PushNotifications.js"></script>
 	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	    document.addEventListener("deviceready", onDeviceReady, false);
+	    function onDeviceReady() {
+	        navigator.splashscreen.hide();
+	    }
+    </script>
 </head>
 <body onload="init();">
 <div data-role="page"  id="home">
