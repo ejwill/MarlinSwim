@@ -34,10 +34,10 @@ function initPushwoosh() {
 	pushNotification.setApplicationIconBadgeNumber(0);
     
 	//start geo tracking. PWTrackSignificantLocationChanges - Uses GPS in foreground, Cell Triangulation in background.
-	pushNotification.startLocationTracking('PWTrackSignificantLocationChanges',
-                                           function() {
-										   console.warn('Location Tracking Started');
-                                           });
+	///pushNotification.startLocationTracking('PWTrackSignificantLocationChanges',
+    //                                       function() {
+	//									   console.warn('Location Tracking Started');
+    //                                      });
 	
 	document.addEventListener('push-notification', function(event) {
                               var notification = event.notification;
